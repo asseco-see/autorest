@@ -116,7 +116,8 @@ namespace Microsoft.Rest.Generator
 
             client.Name = GetTypeName(client.Name);
             client.Namespace = GetNamespaceName(client.Namespace);
-
+            client.CommonNamespace = GetNamespaceName(client.CommonNamespace);
+            
             NormalizeClientProperties(client);
 
             var normalizedModels = new List<CompositeType>();
