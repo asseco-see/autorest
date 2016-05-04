@@ -39,6 +39,11 @@ namespace Microsoft.Rest.Generator.ClientModel
         public string Namespace { get; set; }
 
         /// <summary>
+        /// Gets or sets the namespace fro all common classes.
+        /// </summary>
+        public string CommonNamespace { get; set; }
+
+        /// <summary>
         /// Gets or sets the version of the API described by this service.
         /// </summary>
         public string ApiVersion { get; set; }
