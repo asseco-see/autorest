@@ -40,6 +40,10 @@ namespace Microsoft.Rest.Generator.CSharp
                 if (this.ModelTypes.Any() || this.HeaderTypes.Any())
                 {
                     yield return "Models";
+                    if ((this.CommonNamespace != null) && !(this.CommonNamespace.Equals("")))
+                    {
+                        yield return this.CommonNamespace; 
+                    }
                 }
             }
         }
