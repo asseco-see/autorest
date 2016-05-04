@@ -18,7 +18,7 @@ namespace Microsoft.Rest.Modeler.Swagger.Model
 
         public ParameterLocation In { get; set; }
 
-        [JsonProperty(PropertyName = "$ref")]
+        // [JsonProperty(PropertyName = "$ref")]
         public string Reference { get; set; }
 
         [JsonProperty(PropertyName = "required")]
