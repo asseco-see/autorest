@@ -85,6 +85,13 @@ Licensed under the MIT License. See License.txt in the project root for license 
         public string Namespace { get; set; }
 
         /// <summary>
+        /// Gets or sets a base namespace for generated code.
+        /// </summary>
+        [SettingsInfo("The common namespace to use for generated code.")]
+        [SettingsAlias("cn")]
+        public string CommonNamespace { get; set; }
+
+        /// <summary>
         /// Gets or sets the output directory for generated files. If not specified, uses 'Generated' as the default.
         /// </summary>
         [SettingsInfo("The location for generated files. If not specified, uses \"Generated\" as the default.")]
