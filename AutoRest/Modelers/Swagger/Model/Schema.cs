@@ -30,7 +30,7 @@ namespace Microsoft.Rest.Modeler.Swagger.Model
         /// </summary>
         public Dictionary<string, Schema> Properties { get; set; }
 
-        // [JsonProperty(PropertyName = "$ref")]
+        [JsonProperty(PropertyName = "$ref")]
         public string Reference { get; set; }
 
         public bool ReadOnly { get; set; }
