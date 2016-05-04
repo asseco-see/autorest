@@ -146,6 +146,12 @@ namespace Microsoft.Rest.Generator.CSharp
             // Models
             foreach (var model in serviceClient.ModelTypes.Concat(serviceClient.HeaderTypes))
             {
+                if (model.Extensions.ContainsKey(AzureExtensions.ExternalExtension) &&
+                    (bool)model.Extensions[AzureExtensions.ExternalExtension])
+                {
+                    continue;
+                }
+                
                 var modelTemplate = new ModelTemplate
                 {
                     Model = new ModelTemplateModel(model),
