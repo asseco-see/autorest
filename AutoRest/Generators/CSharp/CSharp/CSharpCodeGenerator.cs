@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.Rest.Generator.ClientModel;
 using Microsoft.Rest.Generator.CSharp.Templates;
 using System.Linq;
+using Microsoft.Rest.Generator.Azure;
 
 namespace Microsoft.Rest.Generator.CSharp
 {
