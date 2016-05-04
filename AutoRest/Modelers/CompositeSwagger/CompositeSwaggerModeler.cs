@@ -83,6 +83,7 @@ namespace Microsoft.Rest.Modeler.CompositeSwagger
             }
             compositeClient.Namespace = Settings.Namespace;
             compositeClient.Documentation = compositeSwaggerModel.Info.Description;
+            compositeClient.CommonNamespace = Settings.CommonNamespace;
 
             return compositeClient;
         }
